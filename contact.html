@@ -1,0 +1,33 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f4f0e7"><title>ご注文・お問い合わせ | 株式会社 札幌直販</title><link rel="icon" type="image/svg+xml" href="assets/logo.svg"><link rel="stylesheet" href="assets/site.css"></head><body><a class="skip-link" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="札幌直販 TOP"><img src="assets/logo.webp" alt="株式会社 札幌直販" width="98" height="98"><span>北海道の恵みを、<br>まっすぐ届ける。</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-word">MENU</span><span class="menu-lines" aria-hidden="true"></span></button>
+  <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+    <a href="index.html" >TOP<span>トップ</span></a>
+    <a href="news.html" >NEWS<span>お知らせ</span></a>
+    <a href="company.html" >COMPANY<span>会社概要</span></a>
+    <a class="nav-contact" href="contact.html" aria-current="page">CONTACT<span>ご注文・お問い合わせ</span><b aria-hidden="true">→</b></a>
+  </nav>
+</header>
+<main id="main"><section class="page-heading wrap"><p class="breadcrumb"><a href="index.html">TOP</a> / CONTACT</p><p class="eyebrow red">CONTACT</p><h1>ご注文・お問い合わせ</h1><p>北海道の美味しいものも、届けることも。<br>まずは、お気軽にご相談ください。</p></section>
+<section class="contact-layout wrap"><aside class="contact-guide"><h2>商品を注文したい方も、<br>こちらから。</h2><p>ご希望の商品・数量・お届け先などをお知らせください。内容を確認し、在庫や価格、配送条件についてご案内します。</p><p class="contact-note">フォームの送信だけでは、ご注文は確定しません。お見積もりやお届け内容をご確認いただいたうえで、お取り引きを進めます。</p><div class="phone-contact"><span>お電話でのお問い合わせ</span><a href="tel:08040479810">080-4047-9810</a><small>株式会社 札幌直販</small></div></aside>
+<div class="contact-form-wrap"><div class="form-notice">確認用プレビューです。入力・確認画面をご覧いただけますが、メールは送信されません。</div>
+<form class="contact-form" method="post" action="contact.html" data-preview="true" id="contact-form">
+
+<p class="required-note"><span>必須</span> の項目をご入力ください。</p>
+<div class="form-row"><label for="inquiry-type">お問い合わせ内容 <span>必須</span></label><select id="inquiry-type" name="inquiry_type" required><option value="order" selected>商品のご注文・ご相談</option><option value="wholesale" >卸売・仕入れについて</option><option value="fulfillment" >発送代行について</option><option value="event" >イベント・物産展について</option><option value="delivery" >軽貨物配送について</option><option value="other" >その他のお問い合わせ</option></select></div>
+<div class="form-row"><label for="customer-name">お名前 <span>必須</span></label><input id="customer-name" name="customer_name" value="" autocomplete="name" maxlength="100" required placeholder="例）札幌 太郎"></div>
+<div class="form-row"><label for="company-name">会社名・店舗名 <small>任意</small></label><input id="company-name" name="company_name" value="" autocomplete="organization" maxlength="150" placeholder="例）株式会社〇〇"></div>
+<div class="form-row"><label for="email">メールアドレス <span>必須</span></label><input id="email" name="email" value="" type="email" autocomplete="email" maxlength="254" required placeholder="例）name@example.com"></div>
+<div class="form-row"><label for="phone">電話番号 <small>任意</small></label><input id="phone" name="phone" value="" type="tel" autocomplete="tel" maxlength="40" placeholder="例）090-1234-5678"></div>
+<div class="form-row"><label for="message">お問い合わせ詳細 <span>必須</span></label><p class="field-help" id="message-help">商品のご注文は「商品名・数量・お届け先の都道府県・希望時期」を、わかる範囲でご記入ください。</p><textarea id="message" name="message" rows="7" maxlength="5000" required aria-describedby="message-help" placeholder="ご希望の商品や、ご相談内容をお聞かせください。"></textarea></div>
+<div class="honey" aria-hidden="true"><label for="website">この欄は空のままにしてください</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+<label class="consent"><input type="checkbox" name="consent" value="1"  required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー<span class="sr-only">（新しいタブで開く）</span></a>に同意する</span></label>
+<p class="form-error" role="alert" hidden></p><button class="submit-button" type="submit">入力内容を確認する <span aria-hidden="true">→</span></button>
+<noscript><p class="field-help">JavaScriptが無効の場合、確認画面を省略して送信します。内容をご確認のうえボタンを押してください。</p></noscript>
+</form>
+<dialog class="confirm-dialog" aria-labelledby="confirm-title"><div class="dialog-inner"><p class="eyebrow red">CONFIRM</p><h2 id="confirm-title">入力内容の確認</h2><p>内容をご確認のうえ、送信してください。</p><dl class="confirm-details"></dl><div class="dialog-actions"><button type="button" class="confirm-back">修正する</button><button type="button" class="confirm-send submit-button">この内容で送信する →</button></div></div></dialog>
+<div id="preview-result" class="form-result" hidden tabindex="-1"><p class="eyebrow red">PREVIEW</p><h2>入力内容を確認できました。</h2><p>これは確認用のプレビューです。<br>お問い合わせは送信されていません。</p><p>WordPressにテーマを導入し、メール設定後に実際の送信ができます。</p><button type="button" class="preview-reset plain-link">フォームに戻る →</button></div>
+</div></section></main>
+<footer class="site-footer"><div class="wrap footer-main"><a class="footer-brand" href="index.html"><img src="assets/logo-light.webp" alt="株式会社 札幌直販" width="115" height="115"><span>なまら美味いを、全国へ。</span></a><div class="footer-links"><a href="index.html">TOP</a><a href="news.html">NEWS</a><a href="company.html">COMPANY</a><a href="contact.html">CONTACT</a></div><a class="back-top" href="#" aria-label="ページの先頭へ">↑</a></div><div class="wrap footer-bottom"><small>© 2026 SAPPORO CHOKUHAN</small><a href="privacy.html">プライバシーポリシー</a><span>HOKKAIDO, JAPAN</span></div></footer>
+<script defer src="assets/site.js"></script></body></html>
