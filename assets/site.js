@@ -36,7 +36,6 @@ if(business){
   pinTop=pinned?Math.min(0,viewport-stage.offsetHeight):0;
   stage.style.setProperty('--business-pin-top',`${pinTop}px`);
   business.style.height=pinned?`${stage.offsetHeight+distance}px`:'';
-  business.querySelector('.business-hint').firstChild.textContent=pinned?'縦にスクロールして事業を見る ':'横にスワイプして事業を見る ';
   windowEl.setAttribute('aria-label',pinned?'札幌直販の5つの事業。縦スクロールで横に切り替わります':'札幌直販の5つの事業。左右にスクロールしてご覧ください');
   if(pinned)update();else active(windowEl.scrollLeft);
  };

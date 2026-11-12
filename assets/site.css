@@ -484,3 +484,13 @@ body::before{display:none}
  .site-nav>a,.nav-item>a{font-size:19px}
  .site-nav>a>span,.nav-item>a>span{font-size:11px;margin-top:6px}
 }
+
+/* TOP business switcher: business names instead of numbers (1.5.3). */
+.business-bottom{justify-content:flex-start}
+.business-pagination{flex-wrap:wrap;gap:8px 26px}
+.business-pagination button{font-family:var(--serif);font-size:15px;letter-spacing:.06em;min-width:0}
+@media(max-width:760px){
+ .business-pagination{justify-content:flex-start;gap:6px 20px}
+ .business-pagination button{font-size:14px}
+}
+.food-text p,.delivery-copy p{word-break:keep-all;overflow-wrap:anywhere}
