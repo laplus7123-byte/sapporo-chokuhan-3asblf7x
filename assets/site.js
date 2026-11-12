@@ -65,6 +65,13 @@ if(voice&&!reduced){
  voice.classList.add('is-auto');
  if(toggle){toggle.hidden=false;toggle.addEventListener('click',()=>{const paused=voice.classList.toggle('is-paused');toggle.setAttribute('aria-pressed',String(paused));toggle.textContent=paused?'再生':'一時停止';});}
 }
+const service=document.querySelector('.bz-service');
+if(service&&'IntersectionObserver' in window){
+ const photos=[...service.querySelectorAll('.bz-service-sticky img')],count=service.querySelector('.bz-service-count b');
+ const show=step=>{photos.forEach(img=>img.classList.toggle('is-current',img.dataset.step===step));if(count)count.textContent=step;};
+ const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)show(e.target.dataset.step);}),{rootMargin:'-45% 0px -45% 0px'});
+ service.querySelectorAll('.bz-service-item').forEach(item=>io.observe(item));
+}
 const form=document.querySelector('#contact-form');if(!form)return;
 const params=new URLSearchParams(location.search),type=form.elements.inquiry_type,item=params.get('item');if([...type.options].some(o=>o.value===params.get('type')))type.value=params.get('type');
 if(item==='seafood')form.elements.message.value='海産物について相談したいです。\nご希望の商品：\n数量：\nお届け先の都道府県：\n希望時期：';if(item==='produce')form.elements.message.value='青果について相談したいです。\nご希望の商品：\n数量：\nお届け先の都道府県：\n希望時期：';
