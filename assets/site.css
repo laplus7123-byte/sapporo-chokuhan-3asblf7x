@@ -253,8 +253,6 @@ body::before{display:none}
 }
 
 /* Business pages */
-.business-more{display:flex;width:fit-content;align-items:center;gap:14px;margin-top:16px;font-size:12px;text-decoration:underline;text-underline-offset:5px}
-.business-more:hover{color:var(--red)}
 .company-businesses a{text-decoration:underline;text-underline-offset:4px}
 .company-businesses a:hover{color:var(--red)}
 .biz-num{font-family:Georgia,var(--serif);font-size:12px;letter-spacing:.12em;color:var(--red)}
@@ -452,4 +450,37 @@ body::before{display:none}
  .nav-item>a>span{font-size:11px}
  .nav-sub{padding:0 0 12px 2px}
  .nav-sub a{padding:9px 0;font-size:14px}
+}
+
+/* Readable minimum type sizes (1.5.2). */
+.business-en{font-family:var(--serif);font-weight:700;font-size:20px;line-height:1.4;color:var(--ink);letter-spacing:.02em}
+.about-body{font-size:16px;line-height:2.15}
+.about-body p,.business-description{word-break:auto-phrase;text-wrap:pretty}
+.about-body p+p{margin-top:1.2em}
+.business-description,.food-text p,.section-heading>p,.delivery-copy p:not(.section-label),.business-intro>p:last-child,.business-detail,.news-row h3,.company dl,.company dd,.page-heading>p:last-child,.contact-guide p,.privacy-content,.biz-row-copy>p:not(.eyebrow),.bz-reason-list p,.bz-plan-target,.bz-plan-items li,.bz-flow p{font-size:15px}
+.business-description{line-height:2;max-width:30em}
+.plain-link,.text-link,.food-section .plain-link,.business-copy .plain-link,.hero-copy .text-link,.delivery-copy .text-link,.news-layout .text-link,.biz-row-copy .text-link,.biz-cta,.contact-cta a,.form-row label,.bz-localnav-inner,.voice-toggle,.form-notice,.form-status,.dialog-inner>p,.map-caption,.article-meta{font-size:14px}
+.footer-links,.news-meta,.consent,.contact-guide .contact-note,.contact-cta p:not(.eyebrow),.seafood-gallery figcaption,.voice-meta,.bz-localnav-inner .bz-localnav-cta{font-size:13px}
+.section-note,.bz-price-note,.bz-plan-note,.bz-service-note,.bz-hero-note,.bz-scope-list small,.map-note,.voice-note,.preview-note,.image-note,.business-hint,.field-help,.required-note,.confirm-details dt,.privacy-date,.logistics-caption small,.phone-contact small,.form-row label small,.footer-bottom,.footer-bottom small,.footer-credit,.breadcrumb,.news-meta>span{font-size:12px}
+.section-label{font-size:13px}
+.section-label small,.site-nav>a>span,.nav-item>a>span{font-size:11px}
+@media(max-width:1050px) and (min-width:761px){.business-copy .plain-link{font-size:13px}.business-description{font-size:14px}}
+@media(min-width:761px) and (max-height:760px){.business-description{font-size:14px}.business-en{font-size:18px}}
+@media(max-width:760px){
+ .business-en{font-size:17px}
+ .section-label{font-size:12px}
+ .about-body{font-size:15px;line-height:2.1}
+ .business-description,.food-text p,.section-heading>p,.delivery-copy p:not(.section-label),.business-intro>p:last-child,.business-detail,.news-row h3,.company dl,.company dd,.page-heading>p:last-child,.contact-guide p,.privacy-content,.biz-row-copy>p:not(.eyebrow),.bz-reason-list p,.bz-plan-target,.bz-plan-items li,.bz-flow p{font-size:14px}
+ .plain-link,.text-link,.food-section .plain-link,.business-copy .plain-link,.hero-copy .text-link,.delivery-copy .text-link,.news-layout .text-link,.biz-row-copy .text-link,.biz-cta,.contact-cta a,.form-row label,.bz-localnav-inner,.voice-toggle,.form-notice,.form-status,.dialog-inner>p,.map-caption,.article-meta{font-size:13px}
+ .footer-links,.news-meta,.consent,.contact-guide .contact-note,.contact-cta p:not(.eyebrow),.seafood-gallery figcaption,.voice-meta{font-size:12px}
+ .section-note,.bz-price-note,.bz-plan-note,.bz-service-note,.bz-hero-note,.bz-scope-list small,.map-note,.voice-note,.preview-note,.image-note,.business-hint,.field-help,.required-note,.confirm-details dt,.privacy-date,.logistics-caption small,.phone-contact small,.form-row label small,.footer-bottom,.footer-bottom small,.footer-credit,.breadcrumb,.news-meta>span{font-size:11px}
+}
+
+/* Header nav: Japanese label large, English small (1.5.3). */
+.site-nav>a,.nav-item>a{font-family:var(--serif);font-size:15px;font-weight:600;line-height:1.4;letter-spacing:.08em}
+.site-nav>a>span,.nav-item>a>span{font-family:Georgia,serif;font-size:11px;font-weight:400;margin-top:5px;letter-spacing:.14em}
+.nav-contact b{top:50%;transform:translateY(-50%)}
+@media(max-width:760px){
+ .site-nav>a,.nav-item>a{font-size:19px}
+ .site-nav>a>span,.nav-item>a>span{font-size:11px;margin-top:6px}
 }
