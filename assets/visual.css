@@ -1,0 +1,93 @@
+/* Visual service guides: Sapporo Chokuhan, 2026-11-14. */
+.visual-icon{display:block;flex:none;object-fit:contain;max-width:100%;height:auto}
+.visual-service-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:46px}
+.visual-service-guide a{display:flex;align-items:center;gap:12px;padding:20px 14px;background:var(--paper-deep);border:1px solid var(--line);transition:background .2s,border-color .2s}
+.visual-service-guide a:hover{background:#e7e0d1;border-color:var(--red)}
+.visual-service-guide .visual-icon{width:64px;height:64px}
+.visual-service-guide strong{display:block;font-family:var(--serif);font-size:16px;line-height:1.55}
+.visual-service-guide small{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.6}
+.visual-service-guide b{margin-left:auto;color:var(--red);font-size:16px;font-weight:400}
+.visual-service-guide span{min-width:0}
+.bz-service-item{scroll-margin-top:85px}
+.visual-service-label{display:flex;align-items:center;gap:20px;margin-bottom:4px}
+.visual-service-symbol{display:flex;align-items:center;justify-content:center;width:96px;height:96px;border-radius:50%;background:var(--paper);flex:none}
+.visual-service-symbol .visual-icon{width:88px;height:88px}
+.visual-service-label .biz-num{font-size:12px;letter-spacing:.12em}
+.visual-keywords{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 22px;padding:0}
+.visual-keywords li{display:inline-flex;align-items:center;gap:6px;font-size:12px;line-height:1.6;padding:5px 9px;border:1px solid var(--line);color:var(--muted)}
+.visual-keywords li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--red);flex:none}
+.bz-service .visual-keywords li{border-color:#ffffff30;color:#f4f0e7;background:#ffffff05}
+.bz-service .visual-keywords li::before{background:#e38b79}
+.visual-reason-top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:20px}
+.visual-reason-top .visual-icon{width:112px;height:112px}
+.visual-reason-top .bz-reason-num{font-size:20px;color:#a59585;align-self:flex-start;padding-top:12px}
+.bz-reason-list{gap:30px}
+.bz-reason-list>li{border-top:1px solid #c9c3b5;padding-top:20px}
+.bz-reason-list h3{margin-top:0}
+.visual-plan-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.visual-plan-head .visual-icon{width:56px;height:56px}
+.visual-plan-head h3{flex:1;margin:0;font-size:19px}
+.visual-directory{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:42px}
+.visual-directory a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;background:var(--paper-deep);padding:22px 14px 26px;border:1px solid var(--line);transition:border-color .2s,background .2s}
+.visual-directory a:hover{border-color:var(--red);background:#e7e0d1}
+.visual-directory .visual-icon{width:88px;height:88px;margin-bottom:12px}
+.visual-directory strong{font-family:var(--serif);font-size:17px;line-height:1.6}
+.visual-directory span{font-size:11px;color:var(--muted);line-height:1.8;margin-top:5px}
+.visual-directory b{position:absolute;top:12px;right:12px;color:var(--red);font-size:14px;font-weight:400}
+.biz-row-copy .eyebrow{align-items:center;gap:12px}
+.biz-row-copy .eyebrow .visual-icon{width:44px;height:44px}
+.biz-row-copy .visual-keywords{margin-bottom:18px}
+.business-en{display:flex;align-items:center;gap:12px}
+.business-en .visual-icon{width:44px;height:44px}
+.business-copy .visual-keywords{margin:16px 0 14px;gap:6px}
+.business-copy .visual-keywords li{font-size:11px;padding:3px 6px}
+.business-pagination{gap:8px 22px}
+.business-pagination button{display:flex;align-items:center;gap:6px}
+.business-pagination .visual-icon{width:32px;height:32px}
+.visual-directory a:focus-visible,.visual-service-guide a:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+@media(max-width:1050px){
+ .visual-service-guide{gap:10px}
+ .visual-service-guide a{flex-wrap:wrap;padding:16px}
+ .visual-service-guide .visual-icon{width:60px;height:60px}
+ .visual-service-guide span{flex-basis:calc(100% - 20px);order:2}
+ .visual-service-guide b{order:1}
+ .visual-plan-head{gap:8px}
+ .visual-plan-head h3{font-size:17px}
+ .visual-plan-head .visual-icon{width:48px;height:48px}
+}
+@media(max-width:760px){
+ .visual-service-guide{grid-template-columns:1fr;gap:10px;margin-top:30px}
+ .visual-service-guide a{flex-wrap:nowrap;gap:14px;padding:12px 16px}
+ .visual-service-guide .visual-icon{width:60px;height:60px}
+ .visual-service-guide span{flex-basis:auto;order:0}
+ .visual-service-guide strong{font-size:16px}
+ .visual-service-guide small{font-size:12px}
+ .visual-service-guide b{order:0}
+ .visual-service-symbol{width:84px;height:84px}
+ .visual-service-symbol .visual-icon{width:76px;height:76px}
+ .visual-service-label{gap:16px;margin-top:24px}
+ .visual-keywords{gap:6px;margin-bottom:18px}
+ .visual-keywords li{font-size:12px;padding:5px 8px}
+ .visual-reason-top{margin-bottom:14px}
+ .visual-reason-top .visual-icon{width:96px;height:96px}
+ .bz-reason-list{gap:28px}
+ .bz-reason-list>li{padding-top:16px}
+ .visual-plan-head .visual-icon{width:56px;height:56px}
+ .visual-plan-head h3{font-size:18px}
+ .visual-directory{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:20px}
+ .visual-directory a{padding:18px 12px}
+ .visual-directory .visual-icon{width:72px;height:72px;margin-bottom:8px}
+ .visual-directory strong{font-size:16px}
+ .visual-directory span{font-size:11px}
+ .visual-directory a:last-child{grid-column:1/-1;display:grid;grid-template-columns:72px 1fr;column-gap:12px;text-align:left;align-items:center;padding:14px 20px}
+ .visual-directory a:last-child .visual-icon{grid-row:1/3;margin:0}
+ .visual-directory a:last-child strong{align-self:end}
+ .visual-directory a:last-child span{margin:2px 0 0;align-self:start}
+ .business-en .visual-icon{width:34px;height:34px}
+ .business-pagination{gap:6px 13px}
+ .business-pagination button{gap:4px;font-size:13px}
+ .business-pagination .visual-icon{width:24px;height:24px}
+ .business-copy .visual-keywords{margin:10px 0;gap:4px}
+ .business-copy .visual-keywords li{font-size:10px;padding:2px 5px}
+}
+@media(prefers-reduced-motion:reduce){.visual-directory a,.visual-service-guide a{transition:none}}
