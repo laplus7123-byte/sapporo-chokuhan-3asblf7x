@@ -29,9 +29,8 @@
 .visual-plan-head .visual-icon{width:56px;height:56px}
 .visual-plan-head h3{flex:1;min-width:0;margin:0;font-size:19px}
 .visual-directory{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:42px}
-.visual-directory a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;background:var(--paper-deep);padding:22px 14px 26px;border:1px solid var(--line);transition:border-color .2s,background .2s}
+.visual-directory a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--paper-deep);padding:32px 14px 28px;border:1px solid var(--line);transition:border-color .2s,background .2s}
 .visual-directory a:hover{border-color:var(--red);background:#e7e0d1}
-.visual-directory .visual-icon{width:88px;height:88px;margin-bottom:12px}
 .visual-directory strong{font-family:var(--serif);font-size:17px;line-height:1.6}
 .visual-directory span{font-size:11px;color:var(--muted);line-height:1.8;margin-top:5px}
 .visual-directory b{position:absolute;top:12px;right:12px;color:var(--red);font-size:14px;font-weight:400}
@@ -42,9 +41,6 @@
 .business-en .visual-icon{width:44px;height:44px}
 .business-copy .visual-keywords{margin:16px 0 14px;gap:6px}
 .business-copy .visual-keywords li{font-size:11px;padding:3px 6px}
-.business-pagination{gap:8px 22px}
-.business-pagination button{display:flex;align-items:center;gap:6px}
-.business-pagination .visual-icon{width:32px;height:32px}
 .visual-directory a:focus-visible,.visual-service-guide a:focus-visible{outline:2px solid var(--red);outline-offset:4px}
 @media(max-width:1050px){
  .visual-service-guide{gap:10px}
@@ -76,18 +72,11 @@
  .visual-plan-head .visual-icon{width:56px;height:56px}
  .visual-plan-head h3{font-size:18px}
  .visual-directory{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:20px}
- .visual-directory a{padding:18px 12px}
- .visual-directory .visual-icon{width:72px;height:72px;margin-bottom:8px}
+ .visual-directory a{padding:26px 12px 22px}
  .visual-directory strong{font-size:16px}
  .visual-directory span{font-size:11px}
- .visual-directory a:last-child{grid-column:1/-1;display:grid;grid-template-columns:72px 1fr;column-gap:12px;text-align:left;align-items:center;padding:14px 20px}
- .visual-directory a:last-child .visual-icon{grid-row:1/3;margin:0}
- .visual-directory a:last-child strong{align-self:end}
- .visual-directory a:last-child span{margin:2px 0 0;align-self:start}
+ .visual-directory a:last-child{grid-column:1/-1;padding:22px 20px}
  .business-en .visual-icon{width:34px;height:34px}
- .business-pagination{gap:6px 13px}
- .business-pagination button{gap:4px;font-size:13px}
- .business-pagination .visual-icon{width:24px;height:24px}
  .business-copy .visual-keywords{margin:10px 0;gap:4px}
  .business-copy .visual-keywords li{font-size:10px;padding:2px 5px}
 }
