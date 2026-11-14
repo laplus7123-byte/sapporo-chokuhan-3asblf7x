@@ -494,3 +494,11 @@ body::before{display:none}
  .business-pagination button{font-size:14px}
 }
 .food-text p,.delivery-copy p{word-break:keep-all;overflow-wrap:anywhere}
+
+/* Business flow icons (1.5.5). */
+.bz-flow-icon{display:block;width:104px;height:104px;object-fit:contain;margin:14px 0 4px -8px}
+@media(max-width:760px){
+ .bz-flow li{display:grid;grid-template-columns:76px minmax(0,1fr);column-gap:16px;align-items:start}
+ .bz-flow li>.biz-num,.bz-flow li>h3,.bz-flow li>p{grid-column:2}
+ .bz-flow-icon{grid-column:1;grid-row:1/span 3;width:76px;height:76px;margin:0 0 0 -6px}
+}
