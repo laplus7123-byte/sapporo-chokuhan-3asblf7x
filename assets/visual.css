@@ -1,5 +1,6 @@
 /* Visual service guides: Sapporo Chokuhan, 2026-11-14. */
 .visual-icon{display:block;flex:none;object-fit:contain;max-width:100%;height:auto}
+.bz-concept-layout>*{min-width:0}
 .visual-service-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:46px}
 .visual-service-guide a{display:flex;align-items:center;gap:12px;padding:20px 14px;background:var(--paper-deep);border:1px solid var(--line);transition:background .2s,border-color .2s}
 .visual-service-guide a:hover{background:#e7e0d1;border-color:var(--red)}
@@ -26,7 +27,7 @@
 .bz-reason-list h3{margin-top:0}
 .visual-plan-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .visual-plan-head .visual-icon{width:56px;height:56px}
-.visual-plan-head h3{flex:1;margin:0;font-size:19px}
+.visual-plan-head h3{flex:1;min-width:0;margin:0;font-size:19px}
 .visual-directory{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:42px}
 .visual-directory a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;background:var(--paper-deep);padding:22px 14px 26px;border:1px solid var(--line);transition:border-color .2s,background .2s}
 .visual-directory a:hover{border-color:var(--red);background:#e7e0d1}
